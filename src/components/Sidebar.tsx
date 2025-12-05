@@ -4,7 +4,7 @@ type SidebarProps = {
   active: Section;
   onChange: (s: Section) => void;
   language: Language;
-  onLanguageChange: (lang: Language) => void;
+  onLanguageChange?: (lang: Language) => void;
 };
 
 const Sidebar = ({ active, onChange, language }: SidebarProps) => {

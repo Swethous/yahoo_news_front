@@ -6,7 +6,7 @@ import type { Section } from "./data/graphs";
 import type { Language } from "./data/graphs";
 
 function App() {
-  const [section, setSection] = useState<Section>("timeseries");
+  const [section, setSection] = useState<Section>("overview");
   const [language, setLanguage] = useState<Language>("ja"); // 👈 언어 상태
 
   return (
