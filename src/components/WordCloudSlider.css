@@ -1,0 +1,40 @@
+.WordCloudTopic {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.WordCloudTopic__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.WordCloudTopic__arrow {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.WordCloudTopic__imageWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 12;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.WordCloudTopic__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or fill/cover 원하는 스타일로 */
+}

@@ -1,0 +1,86 @@
+/* 전체 헤더를 양쪽 정렬 */
+.Header {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between; /* ⬅️ 왼쪽/오른쪽 배치 */
+  align-items: center;
+}
+
+/* 왼쪽 영역(제목 + 서브타이틀) */
+.Header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.Header__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.Header__subtitle {
+  font-size: 13px;
+  padding-top: 10px;
+  padding-left: 5px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* 오른쪽 영역 */
+.Header__right {
+  display: flex;
+  align-items: center;
+}
+
+/* 토글 UI */
+.Header__langToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 999px;
+  background-color: #e5e7eb;
+}
+
+/* 버튼 */
+.Header__langButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 500;
+  background: transparent;
+  color: #374151;
+
+  transition: all 0.15s ease;
+}
+
+.Header__langButton:hover {
+  background-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+/* 활성 */
+.Header__langButton.is-active {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.5);
+}
+
+.Header__langButton.is-active:hover {
+  background-color: #1d4ed8;
+}
+
+.Header__dataCount {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 1px;           /* 줄과 텍스트 간격 */
+  border-bottom: 1px solid #0f172a; /* 원하는 색상 */
+}

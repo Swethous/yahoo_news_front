@@ -1,0 +1,45 @@
+.week-ranking-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 12px;
+  border-bottom: 1px solid #eee;
+  gap: 12px;
+}
+
+/* 왼쪽 value */
+.week-ranking-item .value-box {
+  min-width: 110px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+}
+
+/* 가운데 정보 */
+.week-ranking-item .info {
+  flex: 1;
+}
+
+.week-ranking-item .title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.week-ranking-item .meta {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  gap: 8px;
+}
+
+/* 오른쪽 rank */
+.week-ranking-item .rank {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  min-width: 24px;
+  text-align: right;
+}
